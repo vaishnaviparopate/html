@@ -1,0 +1,23 @@
+t=int(input())
+for i in range(t):
+    x,n=map(int,input().split())
+    z=n//100
+    
+    if n%100==0:
+        p=abs(z-x)
+    else:
+        p=abs(z-x)+1
+    if x>p:
+        print("0")
+    else:
+        print(p)
+        
+        t=int(input())
+for i in range(t):
+    n,x,k=map(int,input().split())
+    p=x%k
+    z=(n-x)%k
+    if(p>z):
+        print(p-z)
+    else:
+        print(z-p)
